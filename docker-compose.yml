@@ -290,7 +290,7 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/win/airflowdb
+      device: "/home/win/airflowdb"
 #  CUSTOM_AIRFLOW_DB_VOLUME_PATH
       
   airflow-volume: 
@@ -298,4 +298,4 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: /home/win/airflow
+      device: "/home/win/airflow"
