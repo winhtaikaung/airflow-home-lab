@@ -290,11 +290,11 @@ volumes:
     driver_opts:
       type: none
       o: bind
-      device: ${CUSTOM_AIRFLOW_DB_VOLUME_PATH}
+      device: "$CUSTOM_AIRFLOW_DB_VOLUME_PATH"
       
   airflow-volume: 
     driver: local
     driver_opts:
       type: none
       o: bind
-      device: ${CUSTOM_AIRFLOW_VOLUME_PATH}
+      device: "$CUSTOM_AIRFLOW_VOLUME_PATH"
