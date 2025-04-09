@@ -256,7 +256,7 @@ services:
       _PIP_ADDITIONAL_REQUIREMENTS: ''
     user: "0:0"
     volumes:
-      <<:*airflow-volume
+      - &airflow-volume
       - ${AIRFLOW_PROJ_DIR:-.}:/sources
 
 
